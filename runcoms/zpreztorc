@@ -31,20 +31,31 @@ zstyle ':prezto:*:*' color 'yes'
 # The order matters.
 zstyle ':prezto:load' pmodule \
   'environment' \
-  'terminal' \
   'editor' \
-  'syntax-highlighting' \
   'history' \
   'history-substring-search' \
+  'syntax-highlighting' \
+  'autosuggestions' \
+  'command-not-found' \
   'directory' \
-  'spectrum' \
-  'utility' \
-  'completion' \
-  'prompt' \
+  'docker' \
+  'fasd' \
   'git' \
+  'gnu-utility' \
+  'gpg' \
+  'helper' \
+  'homebrew' \
+  'osx' \
+  'prompt' \
   'python' \
+  'rsync' \
+  'spectrum' \
+  'ssh' \
+  'terminal' \
   'tmux' \
-  'autosuggestions'
+  'utility' \
+  'wakeonlan' \
+  'completion'
 
 #
 # Autosuggestions
@@ -196,7 +207,7 @@ zstyle ':prezto:module:python:virtualenv' initialize 'yes'
 #
 
 # Set the SSH identities to load into the agent.
-# zstyle ':prezto:module:ssh:load' identities 'id_rsa' 'id_rsa2' 'id_github'
+zstyle ':prezto:module:ssh:load' identities 'evincent207_ecdsa'
 
 #
 # Syntax Highlighting
@@ -246,7 +257,7 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
 # zstyle ':prezto:module:tmux:auto-start' local 'yes'
 
 # Auto start a session when Zsh is launched in a SSH connection.
-# zstyle ':prezto:module:tmux:auto-start' remote 'yes'
+zstyle ':prezto:module:tmux:auto-start' remote 'yes'
 
 # Integrate with iTerm2.
 zstyle ':prezto:module:tmux:iterm' integrate 'yes'
