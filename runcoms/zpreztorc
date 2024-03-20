@@ -31,11 +31,10 @@ zstyle ':prezto:*:*' color 'yes'
 # The order matters.
 zstyle ':prezto:load' pmodule \
   'environment' \
+  'alias-tips' \
+  'clipboard' \
   'editor' \
   'history' \
-  'history-substring-search' \
-  'syntax-highlighting' \
-  'autosuggestions' \
   'command-not-found' \
   'directory' \
   'docker' \
@@ -46,15 +45,22 @@ zstyle ':prezto:load' pmodule \
   'helper' \
   'homebrew' \
   'osx' \
-  'prompt' \
   'python' \
   'rsync' \
   'spectrum' \
   'ssh' \
   'terminal' \
+  'thefuck' \
   'tmux' \
+  'tmux-xpanes' \
   'utility' \
   'wakeonlan' \
+  'syntax-highlighting' \
+  'history-substring-search' \
+  'autosuggestions' \
+  'enhancd' \
+  'contrib-prompt' \
+  'prompt' \
   'completion'
 
 #
@@ -87,6 +93,13 @@ zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 # Allow the zsh prompt context to be shown.
 zstyle ':prezto:module:editor' ps-context 'yes'
+
+#
+# Enhancd
+#
+
+# Specify command to invoke enhancd
+zstyle ":prezto:module:enhancd" command "cd"
 
 #
 # Git
@@ -164,7 +177,7 @@ zstyle ':prezto:module:history-substring-search' fuzzy 'yes'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'evincent'
+zstyle ':prezto:module:prompt' theme 'spaceship'
 
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
@@ -212,7 +225,7 @@ zstyle ':prezto:module:ssh:load' identities 'evincent207_ecdsa'
 #
 # Syntax Highlighting
 #
-
+zstyle ':prezto:module:syntax-highlighting' color 'yes'
 # Set syntax highlighters.
 # By default, only the main highlighter is enabled.
 zstyle ':prezto:module:syntax-highlighting' highlighters \
