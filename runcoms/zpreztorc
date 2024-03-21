@@ -38,7 +38,6 @@ zstyle ':prezto:load' pmodule \
   'command-not-found' \
   'directory' \
   'docker' \
-  'fasd' \
   'git' \
   'gnu-utility' \
   'gpg' \
@@ -58,7 +57,6 @@ zstyle ':prezto:load' pmodule \
   'syntax-highlighting' \
   'history-substring-search' \
   'autosuggestions' \
-  'enhancd' \
   'contrib-prompt' \
   'prompt' \
   'completion'
@@ -177,7 +175,7 @@ zstyle ':prezto:module:history-substring-search' fuzzy 'yes'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'spaceship'
+# zstyle ':prezto:module:prompt' theme 'spaceship'
 
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)
